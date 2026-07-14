@@ -117,7 +117,7 @@
       const json = JSON.parse(raw.substring(raw.indexOf('{'), raw.lastIndexOf('}') + 1));
 
       const cols = json.table.cols.map(c => c.label);
-      const statusColIdx = cols.indexOf(STATUS_COLUMN_LABEL);
+      const statusColIdx = 1/*cols.indexOf(STATUS_COLUMN_LABEL)*/;
       const timeColIdx = 0; // 表單的 Timestamp 欄位固定在第一欄
 
       const rows = json.table.rows;
